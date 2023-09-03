@@ -12,21 +12,15 @@
       <img class="bg-white rounded-xl" src="/user.png" alt="" srcset="" />
     </header>
     <!-- Chat Section -->
-    <div class="ml-4 flex text-green-500 items-center">
-      <div>
-        <img
-          class="mr-3 bg-white rounded-xl"
-          src="/user.png"
-          alt=""
-          srcset=""
-        />
-      </div>
+    <div class="ml-4 flex flex-col text-green-500" id="opMsg">
+      <!-- <img class="mr-3 bg-white rounded-xl" src="/user.png" alt="" srcset="" />
+
       <div>
         <h3 class="text-base font-semibold">User 1</h3>
         <p class="w-11/12">sad as das das das dsa da sd sad a d</p>
-      </div>
+      </div> -->
     </div>
-    <div class="ml-4 flex text-cyan-400 items-center">
+    <!-- <div class="ml-4 flex text-cyan-400 items-center">
       <div>
         <img
           class="mr-3 bg-white rounded-xl"
@@ -39,23 +33,27 @@
         <h3 class="text-base font-semibold">User 2</h3>
         <p class="w-11/12">OK!</p>
       </div>
-    </div>
+    </div> -->
     <!-- Message Section -->
-    <div class="flex justify-evenly items-center bottom-0 fixed w-full">
-      <input
-        class="w-4/5 rounded-3xl flex p-2 outline-none"
-        placeholder="Type a message"
-        type="text"
-      />
-      <div>
-        <img
-          class="p-1 bg-white rounded-full"
-          src="/up-arrow.png"
-          alt=""
-          srcset=""
+    <form id="form">
+      <div class="flex justify-evenly items-center bottom-0 fixed w-full">
+        <input
+          id="inputMsg"
+          class="w-4/5 rounded-3xl flex p-2 outline-none"
+          placeholder="Type a message"
+          type="text"
         />
+        <div>
+          <img
+            class="p-1 bg-white rounded-full cursor-pointer"
+            id="sendMsg"
+            src="/up-arrow.png"
+            alt=""
+            srcset=""
+          />
+        </div>
       </div>
-    </div>
+    </form>
   </body>
   <script type="module" src="main.js"></script>
 </html>
